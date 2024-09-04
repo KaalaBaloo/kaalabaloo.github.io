@@ -122,7 +122,7 @@ main #resume li {
   padding-left: 1vw;
 }
 
-main #resume li a {
+main #resume li .title {
   display: flex;
   color: white;
   background-color: black;
@@ -141,9 +141,31 @@ main #resume li a {
   justify-content: center;
 }
 
-main #resume li a:hover {
-  color: rgb(217, 24, 198);
+main #resume li:hover .title {
+  display: none;
+}
+
+main #resume li .text {
+  display: none;
+}
+
+main #resume li:hover .text {  
+  display: flex;
+  color: white;
+  background-color: black;
+  font-size: 2vw;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 0.6vw;
   border: 0.4vw solid rgb(217, 24, 198);
+  padding: 0.2vw;
+
+  width: 40vw;
+  height: 20vw;
+
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blank
