@@ -149,22 +149,30 @@ main #resume li .text {
   display: none;
 }
 
-main #resume li:hover .text {  
+main #resume li:hover .text{  
   display: flex;
-  color: white;
   background-color: black;
-  font-size: 2vw;
-  text-decoration: none;
-  text-align: center;
-
   border-radius: 0.6vw;
   border: 0.4vw solid rgb(217, 24, 198);
   padding: 0.2vw;
-
   width: 40vw;
   height: 20vw;
+}
 
+main #resume li:hover .text ul{  
+  display: flex;
+  text-align: center;
   flex-direction: column;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+main #resume li:hover .text li{  
+  display: flex;
+  color: white;
+  font-size: 2vw;
   justify-content: center;
 }
 
