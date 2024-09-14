@@ -1,4 +1,93 @@
 
+/* BODY & GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: LostSignal, sans-serif, Times, serif;
+  letter-spacing: 0.2vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-size: 3vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+main {
+  margin-bottom: 2vh;
+  padding-top: 2vw;
+}
+
+/*NAV*/
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 1.25vh;
+  width: 100%;
+  top:0;
+  z-index: 2;
+}
+
+nav img {
+  width: 4vw;
+  height: auto;
+  max-height: fit-content;
+  margin-top: 1vh;
+  margin-left: 1.5vw;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 2vw;
+  margin-top: -1vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+nav li {
+  float: left;
+  padding-left: 1vw;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  background-color: black;
+  font-size: 1vw;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 0.6vw;
+  border: 0.2vw solid white;
+  padding: 0.2vw;
+}
+
+nav li a:hover {
+  color: rgb(217, 24, 198);
+  border: 0.2vw solid rgb(217, 24, 198);
+}
+
+/*HEADER*/
+
+header
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+
 header img{
   width: 45vw;
   height: auto;
@@ -16,6 +105,8 @@ header p {
   font-size: 1.5vw;
   color: white;
 }
+
+/* PAWS */
 
 main .paws
 {
@@ -69,6 +160,8 @@ main .paw5 img
   margin-right: 10vw;
 }
 
+/* INFO */
+
 .im {
   opacity: 0;
   transform: rotateZ(-5deg);
@@ -81,20 +174,24 @@ main .paw5 img
   transform: rotateZ(-2deg);
 }
 
+main #info{
+  margin-right: 4vw;
+  margin-left: 4vw;
+  text-align: justify;
+}
+
 main #info h3{
-  margin-top: -4vw;
-  margin-left: 5vw;
   padding-bottom: 3vw;
   font-size: 3.5vw;
 }
 
 main #info p{
-  margin-top: 2vw;
-  margin-left: 5vw;
   font-size: 2.5vw;
 }
 
-main #resume {
+/* SUMMARY */
+
+main #summary {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +199,7 @@ main #resume {
   margin-top: 2vh;
 }
 
-main #resume ul {
+main #summary ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -117,12 +214,12 @@ main #resume ul {
   width: 85vw;
 }
 
-main #resume li {
+main #summary li {
   float: left;
   padding-left: 1vw;
 }
 
-main #resume li .title {
+main #summary li .title {
   display: flex;
   color: white;
   background-color: black;
@@ -141,15 +238,15 @@ main #resume li .title {
   justify-content: center;
 }
 
-main #resume li:hover .title {
+main #summary li:hover .title {
   display: none;
 }
 
-main #resume li .text {
+main #summary li .text {
   display: none;
 }
 
-main #resume li:hover .text{  
+main #summary li:hover .text{  
   display: flex;
   background-color: black;
   border-radius: 0.6vw;
@@ -159,7 +256,7 @@ main #resume li:hover .text{
   height: 20vw;
 }
 
-main #resume li:hover .text ul{  
+main #summary li:hover .text ul{  
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -169,14 +266,178 @@ main #resume li:hover .text ul{
   padding-bottom: 1vw;
 }
 
-main #resume li:hover .text li{  
+main #summary li:hover .text li{  
   display: flex;
   color: white;
   font-size: 2vw;
   justify-content: center;
 }
 
-.blank
-{
-  padding-bottom: 42vw;
+/* topic */
+
+main #topic ul{
+  margin-top: 5vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
 }
+
+main #topic li{
+  border-radius: 0.6vw;
+  border: 0.4vw solid white;
+  padding: 0.2vw;
+}
+
+main #topic li h2{
+  width: 50vw;
+  height: 8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main #topic p {
+  margin: 4vw;
+  font-size: 2.5vw;
+  text-align: justify;
+}
+
+/* examples */
+
+main #examples ul{
+  margin-top: 5vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+main #examples li{
+  border-radius: 0.6vw;
+  border: 0.4vw solid white;
+  padding: 0.2vw;
+}
+
+main #examples li img{
+  width: 20vw;
+  height: auto;
+}
+
+/* CV */
+
+main #cv ul{
+  margin-top: 5vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+
+main #cv li{
+  border-radius: 0.6vw;
+  border: 0.4vw solid white;
+  padding: 0.2vw;
+  width: 80vw;
+  height: 120vw;
+}
+
+main #cv object{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+
+footer ul{
+  margin-top: 2vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+footer li{
+  border-radius: 0.6vw;
+  border: 0.4vw solid white;
+  padding: 0.2vw;
+  width: 90vw;
+  height: auto;
+}
+
+/* Media Queries - Responsive Design
+@media only screen and (max-width: 900px) {
+  nav{
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  nav ul {
+    width: 200px;
+  }
+  
+  nav img {
+    width: 5vw;
+  }
+
+  header img{
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    font-size: 14px;
+  }
+
+  nav ul {
+    width: 180px;
+  }
+
+  nav li a {
+    border: 2px solid white;
+    padding: 6px;
+  }
+  
+  nav img {
+    width: 6vw;
+  }
+
+  header img{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav{
+    font-size: 10px;
+  }
+
+  nav ul {
+    width: 130px;
+  }
+  
+  nav img {
+    width: 6vw;
+  }
+
+}
+/* End Media Queries - Responsive Design*/
