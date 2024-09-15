@@ -404,6 +404,14 @@ footer #footer i{
   font-size: 3.5vw;
 }
 
+footer #footer a{
+  color: white;
+}
+
+footer #footer a:hover {
+  color: rgb(217, 24, 198);
+}
+
 
 /* Media Queries - Responsive Design
 @media only screen and (max-width: 900px) {
