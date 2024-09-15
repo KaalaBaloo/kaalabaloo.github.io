@@ -324,11 +324,29 @@ main #examples li{
   border-radius: 0.6vw;
   border: 0.4vw solid white;
   padding: 0.2vw;
+  position: relative;
 }
 
 main #examples li img{
   width: 20vw;
   height: auto;
+}
+
+main #examples li .text {
+  display: none;
+}
+
+main #examples li:hover .text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.50);
 }
 
 /* CV */
