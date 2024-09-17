@@ -329,7 +329,8 @@ main #examples li{
 
 main #examples li img{
   width: 20vw;
-  height: auto;
+  height: 20vw;
+  object-fit: cover;
 }
 
 main #examples li .text {
@@ -337,7 +338,7 @@ main #examples li .text {
 }
 
 main #examples li:hover .text {
-  justify-content: center;
+  text-align: center;
   align-items: center;
   display: flex;
   color: #fff;
