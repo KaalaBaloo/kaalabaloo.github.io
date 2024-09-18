@@ -321,15 +321,14 @@ main #examples ul{
 }
 
 main #examples li{
-  border-radius: 0.6vw;
-  border: 0.4vw solid white;
-  padding: 0.2vw;
   position: relative;
 }
 
 main #examples li img{
   width: 20vw;
   height: 20vw;
+  border-radius: 0.6vw;
+  border: 0.4vw solid white;
   object-fit: cover;
 }
 
@@ -344,8 +343,8 @@ main #examples li:hover .text {
   color: #fff;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 0.2vw;
+  right: 0.2vw;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.50);
 }
