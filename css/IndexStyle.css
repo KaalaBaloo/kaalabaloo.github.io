@@ -324,12 +324,22 @@ main #examples li{
   position: relative;
 }
 
+main #examples li a{
+  display: flex;
+  justify-content: center;
+}
+
 main #examples li img{
   width: 20vw;
   height: 20vw;
   border-radius: 0.6vw;
   border: 0.4vw solid white;
   object-fit: cover;
+  filter: brightness(100%);
+}
+
+main #examples li:hover img{
+  filter: brightness(50%);
 }
 
 main #examples li .text {
@@ -343,10 +353,10 @@ main #examples li:hover .text {
   color: #fff;
   position: absolute;
   top: 0;
-  left: 0.2vw;
-  right: 0.2vw;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.50);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  letter-spacing: 0;
 }
 
 /* CV */
