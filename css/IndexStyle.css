@@ -350,7 +350,7 @@ main #examples li:hover .text {
   text-align: center;
   align-items: center;
   display: flex;
-  color: #fff;
+  color: white;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -363,6 +363,7 @@ main #examples li:hover .text {
 
 main #cv ul{
   margin-top: 5vw;
+  margin-bottom: 3vw;
   width: 100%;
   height: auto;
   display: flex;
@@ -373,19 +374,26 @@ main #cv ul{
 
 
 main #cv li{
-  border-radius: 0.6vw;
-  border: 0.4vw solid white;
-  padding: 0.2vw;
-  width: 80vw;
-  height: 120vw;
+  width: 50vw;
+  height: 8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-main #cv object{
+main #cv h2{
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+  text-decoration: underline;
+}
+
+main #cv h2:hover{
+  color: rgb(217, 24, 198);
 }
 
 /* Footer */
