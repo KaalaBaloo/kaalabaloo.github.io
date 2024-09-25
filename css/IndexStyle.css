@@ -378,11 +378,11 @@ main #cv a h2:hover{
 }
 
 main #cv_info {
-  margin-top: -3vw;
+  margin-top: -3.5vw;
 }
 
 main #cv_info h3{
-  font-size: 3.5vw;
+  font-size: 3.2vw;
   margin-bottom: 1vw;
 }
 
@@ -394,7 +394,7 @@ main #cv_info ul {
 }
 
 main #cv_info li {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
 }
 
 /* Footer */
