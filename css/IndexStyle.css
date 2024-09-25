@@ -361,39 +361,40 @@ main #examples li:hover .text {
 
 /* CV */
 
-main #cv ul{
-  margin-top: 5vw;
-  margin-bottom: 3vw;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-
-
 main #cv li{
-  width: 50vw;
-  height: 8vw;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main #cv h2{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main #cv a h2{
   color: white;
   text-decoration: underline;
 }
 
-main #cv h2:hover{
+main #cv a h2:hover{
   color: rgb(217, 24, 198);
+}
+
+main #cv_info {
+  margin-top: -3vw;
+}
+
+main #cv_info h3{
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+}
+
+main #cv_info ul {
+  margin-top: 0;
+  margin-bottom: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+main #cv_info li {
+  font-size: 2.5vw;
 }
 
 /* Footer */
