@@ -64,7 +64,7 @@ nav li a {
   display: block;
   color: white;
   background-color: black;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-decoration: none;
   text-align: center;
 
@@ -604,7 +604,6 @@ footer #footer a:hover {
     width: 40vw;
     height: 20vw;
   }
-  
   main #summary li .text ul{  
     display: flex;
     text-align: center;
@@ -614,18 +613,15 @@ footer #footer a:hover {
     padding-top: 1vw;
     padding-bottom: 1vw;
   }
-  
   main #summary li .text li{  
     display: flex;
     color: white;
     font-size: 2vw;
     justify-content: center;
   }
-
   main #examples li img{
     filter: brightness(50%);
   }
-  
   main #examples li .text {
     text-align: center;
     align-items: center;
@@ -637,6 +633,13 @@ footer #footer a:hover {
     padding-left: 2vw;
     padding-right: 2vw;
     letter-spacing: 0;
+  }
+/*nav*/
+  nav img {
+    width: 5vw;
+  }
+  nav li a {
+    font-size: 1.5vw;
   }
 }
 /* End Media Queries - Responsive Design*/
