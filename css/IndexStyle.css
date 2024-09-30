@@ -38,7 +38,7 @@ nav{
 }
 
 nav img {
-  width: 5vw;
+  width: 6vw;
   height: auto;
   max-height: fit-content;
   margin-top: 1vh;
@@ -57,20 +57,20 @@ nav ul {
 
 nav li {
   float: left;
-  padding-left: 1vw;
+  padding-left: 3vw;
 }
 
 nav li a {
   display: block;
   color: white;
   background-color: black;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-decoration: none;
   text-align: center;
 
   border-radius: 0.6vw;
-  border: 0.2vw solid white;
-  padding: 0.2vw;
+  border: 0.4vw solid white;
+  padding: 0.6vw;
 }
 
 nav li a:hover {
@@ -451,7 +451,7 @@ footer #footer a:hover {
 
 
 /* Media Queries - Responsive Design */
-@media (hover: none) {
+@media (pointer: coarse) {
   main #summary li .title {
     display: none;
   }
@@ -497,7 +497,7 @@ footer #footer a:hover {
   }
 }
 
-@media only screen and (max-width: 480px) and (hover: none) {
+@media only screen and (max-width: 480px) and (pointer: coarse) {
   main #summary li .title {
     display: none;
   }
@@ -559,10 +559,13 @@ footer #footer a:hover {
 @media only screen and (min-width: 1000px) {
   /*nav*/
   nav img {
-    width: 4vw;
+    width: 5vw;
+  }
+  nav li {
+    padding-left: 2vw;
   }
   nav li a {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 /*header*/
   header img{
@@ -696,24 +699,8 @@ footer #footer a:hover {
 
 @media only screen and (max-width: 480px) {
 /*nav*/
-nav ul {
-  margin-top: 1vh;
-}
-nav img {
-  width: 8vw;
-}
-nav li {
-  padding-left: 4vw;
-}
-nav li a {
-  font-size: 3.5vw;
-  border-radius: 1vw;
-  border: 0.6vw solid white;
-  padding: 1vw;
-}
-nav li a:hover {
-  color: rgb(217, 24, 198);
-  border: 0.6vw solid rgb(217, 24, 198);
+nav{
+  display: none;
 }
 /*header*/
 header img{
@@ -744,20 +731,20 @@ main .paw2 img
 }
 main .paw3 img
 {
-  width: 10.5vw;
+  width: 10vw;
 }
 main .paw4 img
 {
-  width: 8.5vw;
+  display: none;
 }
 main .paw5 img
 {
-  width: 10vw;
+  display: none;
 }
 /* info */
 main #info h3{
   font-size: 5.5vw;
-  margin-top: 2vw;
+  margin-top: -5vw;
 }
 main #info p{
   font-size: 3vw;
@@ -770,6 +757,9 @@ main #topics p {
   font-size: 3vw;
 }
 /* CV */
+main #cv {
+  margin-bottom: 5vw;
+}
 main #cv_info h3{
   font-size: 4.5vw;
 }
@@ -777,14 +767,27 @@ main #cv_info li {
   font-size: 2.5vw;
 }
 /* Footer */
+footer{
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+}
 footer #footer{
-  font-size: 2.5vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  font-size: 3.5vw;
 }
 footer #footer p {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
 }
 footer #footer i{
-  font-size: 4.5vw;
+  font-size: 5.5vw;
+  padding-left: 1.5vw;
+}
+footer li{
+  border-radius: 1vw;
+  border: 0.6vw solid white;
+  width: 95vw;
 }
 }
 /* End Media Queries - Responsive Design*/
