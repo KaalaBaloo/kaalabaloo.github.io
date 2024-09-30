@@ -196,7 +196,7 @@ main #summary {
   flex-direction: column;
   align-items: center;
 
-  margin-top: 2vh;
+  margin-top: 2vw;
 }
 
 main #summary ul {
@@ -207,7 +207,7 @@ main #summary ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 3vh;
+  margin-top: 3vw;
   overflow: hidden;
   background-color: transparent;
 
@@ -450,64 +450,135 @@ footer #footer a:hover {
 }
 
 
-/* Media Queries - Responsive Design
-@media only screen and (max-width: 900px) {
-  nav{
-    padding-top: 10px;
-    font-size: 16px;
-  }
+/* Media Queries - Responsive Design */
+  @media only screen and (min-width: 500px) {
 
-  nav ul {
-    width: 200px;
-  }
-  
-  nav img {
-    width: 5vw;
-  }
-
+  /*header*/
   header img{
-    padding-top: 20px;
-    padding-bottom: 5px;
+    width: 25vw;
+    padding-top: 6vw;
   }
-
-}
-
-@media only screen and (max-width: 600px) {
-  nav{
-    font-size: 14px;
+  header h1
+  {
+    font-size: 5.5vw;
   }
-
-  nav ul {
-    width: 180px;
+  header p {
+    font-size: 1.2vw;
   }
-
-  nav li a {
-    border: 2px solid white;
-    padding: 6px;
+  /* paws */
+  main .paws{
+    margin-top: -15vw;
   }
-  
-  nav img {
+  main .paws div {
+    padding-top: 3.5vw;
+  }
+  main .paw1 img
+  {
     width: 6vw;
   }
-
-  header img{
-    padding-top: 30px;
-    padding-bottom: 10px;
+  main .paw2 img
+  {
+    width: 5vw;
   }
+  main .paw3 img
+  {
+    width: 6vw;
+  }
+  main .paw4 img
+  {
+    width: 5.5vw;
+  }
+  main .paw5 img
+  {
+    width: 6vw;
+  }
+  /* info */
+  main #info{
+    margin-top: -2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  main #info h3{
+    font-size: 2.2vw;
+    margin-bottom: -2vw;
+  }
+  main #info p{
+    font-size: 1.3vw;
+  }
+  /* summary */
+main #summary {
+  margin-top: 0;
+}
+main #summary ul {
+  margin-top: 2vw;
+}
+main #summary li {
+  float: left;
+  padding-left: 1vw;
+}
+main #summary li .title {
+  font-size: 1.5vw;
+  border: 0.2vw solid white;
+  width: 35vw;
+  height: 12vw;
+}
+main #summary li:hover .text{  
+  border: 0.2vw solid rgb(217, 24, 198);
+  width: 35vw;
+  height: 12vw;
+}
+main #summary li:hover .text li{  
+  font-size: 1.5vw;
+}
+
 }
 
 @media only screen and (max-width: 450px) {
-  nav{
-    font-size: 10px;
+  main #summary li .title {
+    display: none;
   }
-
-  nav ul {
-    width: 130px;
+  main #summary li .text{  
+    display: flex;
+    background-color: black;
+    border-radius: 0.6vw;
+    border: 0.4vw solid rgb(217, 24, 198);
+    padding: 0.2vw;
+    width: 40vw;
+    height: 20vw;
   }
   
-  nav img {
-    width: 6vw;
+  main #summary li .text ul{  
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  
+  main #summary li .text li{  
+    display: flex;
+    color: white;
+    font-size: 2vw;
+    justify-content: center;
   }
 
+  main #examples li img{
+    filter: brightness(50%);
+  }
+  
+  main #examples li .text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    letter-spacing: 0;
+  }
 }
 /* End Media Queries - Responsive Design*/
