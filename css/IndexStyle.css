@@ -453,7 +453,7 @@ footer #footer a:hover {
 /* Media Queries - Responsive Design */
   @media only screen and (min-width: 500px) {
 
-  /*header*/
+/*header*/
   header img{
     width: 25vw;
     padding-top: 6vw;
@@ -492,45 +492,103 @@ footer #footer a:hover {
   {
     width: 6vw;
   }
-  /* info */
+/* info */
   main #info{
     margin-top: -2vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
   }
   main #info h3{
     font-size: 2.2vw;
     margin-bottom: -2vw;
   }
   main #info p{
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
-  /* summary */
-main #summary {
-  margin-top: 0;
-}
-main #summary ul {
-  margin-top: 2vw;
-}
-main #summary li {
-  float: left;
-  padding-left: 1vw;
-}
-main #summary li .title {
-  font-size: 1.5vw;
-  border: 0.2vw solid white;
-  width: 35vw;
-  height: 12vw;
-}
-main #summary li:hover .text{  
-  border: 0.2vw solid rgb(217, 24, 198);
-  width: 35vw;
-  height: 12vw;
-}
-main #summary li:hover .text li{  
-  font-size: 1.5vw;
-}
-
+/* summary */
+  main #summary {
+    margin-top: 0;
+  }
+  main #summary ul {
+    margin-top: 2vw;
+  }
+  main #summary li {
+    float: left;
+    padding-left: 1vw;
+  }
+  main #summary li .title {
+    font-size: 1.5vw;
+    border: 0.2vw solid white;
+    width: 35vw;
+    height: 12vw;
+  }
+  main #summary li:hover .text{  
+    border: 0.2vw solid rgb(217, 24, 198);
+    width: 35vw;
+    height: 12vw;
+  }
+  main #summary li:hover .text li{  
+    font-size: 1.5vw;
+  }
+/* topic */
+  main #topics ul{
+    margin-top: 2vw;
+  }
+  main #topic li{
+    border: 0.2vw solid white;
+  }
+  main #topics li h2{
+    font-size: 2.5vw;
+    padding-bottom: 1vw;
+  }
+  main #topics p {
+    margin-top: 0vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-bottom: 2vw;
+  }
+/* examples */
+  main #examples{
+    margin-bottom: 3vw;
+  }
+  main #examples li img{
+    width: 15vw;
+    height: 15vw;
+    border: 0.2vw solid white;
+  }
+  main #examples li:hover .text {
+    font-size: 2vw;
+  }
+/* CV */
+  main #cv_info h3{
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+  }
+  main #cv_info ul {
+    margin-top: 0;
+    margin-bottom: 1.5vw;
+  }
+  main #cv_info li {
+    font-size: 1.2vw;
+  }
+/* Footer */
+  footer{
+    margin-bottom: 1vw;
+  }
+  footer ul{
+    margin-top: -1vw;
+  }
+  footer li{
+    border: 0.2vw solid white;
+    width: 90vw;
+  }
+  footer #footer{
+    font-size: 1.5vw;
+  }
+  footer #footer p {
+    font-size: 1.5vw;
+  }
+  footer #footer i{
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 450px) {
