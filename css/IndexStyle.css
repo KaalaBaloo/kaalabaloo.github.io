@@ -38,7 +38,7 @@ nav{
 }
 
 nav img {
-  width: 4vw;
+  width: 5vw;
   height: auto;
   max-height: fit-content;
   margin-top: 1vh;
@@ -64,7 +64,7 @@ nav li a {
   display: block;
   color: white;
   background-color: black;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   text-decoration: none;
   text-align: center;
 
@@ -451,8 +451,119 @@ footer #footer a:hover {
 
 
 /* Media Queries - Responsive Design */
-  @media only screen and (min-width: 500px) {
+@media (hover: none) {
+  main #summary li .title {
+    display: none;
+  }
+  main #summary li .text{  
+    display: flex;
+    background-color: black;
+    border-radius: 0.6vw;
+    border: 0.4vw solid rgb(217, 24, 198);
+    padding: 0.2vw;
+    width: 40vw;
+    height: 20vw;
+  }
+  main #summary li .text ul{  
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  main #summary li .text li{  
+    display: flex;
+    color: white;
+    font-size: 2vw;
+    justify-content: center;
+  }
+  main #examples li img{
+    filter: brightness(50%);
+  }
+  main #examples li .text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    letter-spacing: 0;
+    font-size: 2.3vw;
+  }
+}
 
+@media only screen and (max-width: 480px) and (hover: none) {
+  main #summary li .title {
+    display: none;
+  }
+  main #summary ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 3vw;
+    overflow: hidden;
+    background-color: transparent;
+  
+    width: 95vw;
+  }
+  main #summary li .text{  
+    display: flex;
+    background-color: black;
+    border-radius: 0.6vw;
+    border: 0.6vw solid rgb(217, 24, 198);
+    padding: 0.2vw;
+    width: 45vw;
+    height: 25vw;
+  }
+  main #summary li .text ul{  
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  main #summary li .text li{  
+    display: flex;
+    color: white;
+    font-size: 2.5vw;
+    justify-content: center;
+  }
+  main #examples li img{
+    filter: brightness(50%);
+  }
+  main #examples li .text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /*nav*/
+  nav img {
+    width: 4vw;
+  }
+  nav li a {
+    font-size: 1vw;
+  }
 /*header*/
   header img{
     width: 25vw;
@@ -509,10 +620,6 @@ footer #footer a:hover {
   }
   main #summary ul {
     margin-top: 2vw;
-  }
-  main #summary li {
-    float: left;
-    padding-left: 1vw;
   }
   main #summary li .title {
     font-size: 1.5vw;
@@ -576,10 +683,6 @@ footer #footer a:hover {
   footer ul{
     margin-top: -1vw;
   }
-  footer li{
-    border: 0.2vw solid white;
-    width: 90vw;
-  }
   footer #footer{
     font-size: 1.5vw;
   }
@@ -591,55 +694,84 @@ footer #footer a:hover {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  main #summary li .title {
-    display: none;
-  }
-  main #summary li .text{  
-    display: flex;
-    background-color: black;
-    border-radius: 0.6vw;
-    border: 0.4vw solid rgb(217, 24, 198);
-    padding: 0.2vw;
-    width: 40vw;
-    height: 20vw;
-  }
-  main #summary li .text ul{  
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 0;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-  }
-  main #summary li .text li{  
-    display: flex;
-    color: white;
-    font-size: 2vw;
-    justify-content: center;
-  }
-  main #examples li img{
-    filter: brightness(50%);
-  }
-  main #examples li .text {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    letter-spacing: 0;
-  }
+@media only screen and (max-width: 480px) {
 /*nav*/
   nav img {
-    width: 5vw;
+    width: 6vw;
   }
   nav li a {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
+/*header*/
+header img{
+  width: 45vw;
+  padding-top: 0;
+}
+header h1
+{
+  font-size: 8.5vw;
+}
+header p {
+  font-size: 2.2vw;
+}
+/* paws */
+main .paws{
+  margin-top: -2vw;
+}
+main .paws div {
+  padding-top: 6.5vw;
+}
+main .paw1 img
+{
+  width: 10vw;
+}
+main .paw2 img
+{
+  width: 8vw;
+}
+main .paw3 img
+{
+  width: 10.5vw;
+}
+main .paw4 img
+{
+  width: 8.5vw;
+}
+main .paw5 img
+{
+  width: 10vw;
+}
+/* info */
+main #info h3{
+  font-size: 5.5vw;
+  margin-top: 2vw;
+}
+main #info p{
+  font-size: 3vw;
+}
+/* topic */
+main #topics li h2{
+  font-size: 5.5vw;
+}
+main #topics p {
+  font-size: 3vw;
+}
+/* CV */
+main #cv_info h3{
+  font-size: 4.5vw;
+}
+main #cv_info li {
+  font-size: 2.5vw;
+}
+/* Footer */
+footer #footer{
+  font-size: 2.5vw;
+}
+footer #footer p {
+  font-size: 2.5vw;
+}
+footer #footer i{
+  font-size: 4.5vw;
+}
 }
 /* End Media Queries - Responsive Design*/
