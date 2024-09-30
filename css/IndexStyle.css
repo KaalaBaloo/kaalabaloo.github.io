@@ -75,7 +75,7 @@ nav li a {
 
 nav li a:hover {
   color: rgb(217, 24, 198);
-  border: 0.2vw solid rgb(217, 24, 198);
+  border: 0.4vw solid rgb(217, 24, 198);
 }
 
 /*header*/
@@ -709,7 +709,7 @@ nav{
 /*header*/
 header img{
   width: 45vw;
-  margin-top: 5vw;
+  margin-top: 8vw;
 }
 header h1
 {
