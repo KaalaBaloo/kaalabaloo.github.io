@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Kaala Baloo — Game Developer &amp; Applied AI</title>
-  <meta name="description" content="Portfolio of Myriam Collada (Kaala Baloo), a game developer working on applied AI. Thirteen published games, an MSc in Artificial Intelligence at Universidad Politécnica de Madrid, and a BSc in Video Game Development at UDIT.">
+  <meta name="description" content="Portfolio of Myriam Collada (Kaala Baloo), a game developer working on applied AI. Fourteen published games, an MSc in Artificial Intelligence at Universidad Politécnica de Madrid, and a BSc in Video Game Development at UDIT.">
   <meta name="author" content="Myriam Collada">
   <meta name="theme-color" content="#08080b">
   <link rel="canonical" href="https://kaalabaloo.github.io/">
@@ -14,11 +14,11 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kaala Baloo">
   <meta property="og:title" content="Kaala Baloo — Game Developer &amp; Applied AI">
-  <meta property="og:description" content="Thirteen published games and applied AI work: intelligent agents, behaviour simulation and generative systems.">
+  <meta property="og:description" content="Fourteen published games and applied AI work: intelligent agents, behaviour simulation and generative systems.">
   <meta property="og:url" content="https://kaalabaloo.github.io/">
   <meta property="og:image" content="https://kaalabaloo.github.io/media/images/web/cat.webp">
   <meta property="og:image:alt" content="The Kaala Baloo cat logo in magenta.">
-  <meta name="twitter:example" content="summary_large_image">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="media/images/web/cat-logo.webp" type="image/webp">
   <link rel="apple-touch-icon" href="media/images/cat%20logo.png">
@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
 
-  <link rel="stylesheet" href="css/IndexStyle.css?v=2">
+  <link rel="stylesheet" href="css/IndexStyle.css?v=3">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
@@ -35,20 +35,26 @@
 </head>
 
 <body>
-  <a class="skip" href="#main">Skip to main content</a>
+  <a class="skip" href="#main" data-i18n="skip">Skip to main content</a>
 
   <header class="topbar">
     <nav class="nav_bar" aria-label="Main">
       <a class="nav_logo" href="#top">
         <img src="media/images/web/cat-logo.webp" width="256" height="256" alt="" aria-hidden="true">
-        <span class="screen_reader">Kaala Baloo — back to top</span>
+        <span class="screen_reader" data-i18n="nav.home">Kaala Baloo — back to top</span>
       </a>
       <ul class="nav_links">
-        <li><a href="#ai">AI</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#abilities">Abilities</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#ai" data-i18n="nav.ai">AI</a></li>
+        <li><a href="#games" data-i18n="nav.games">Games</a></li>
+        <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+        <li><a href="#abilities" data-i18n="nav.abilities">Abilities</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li>
+          <button class="lang_toggle" type="button" lang="es" aria-label="View this page in Spanish" hidden>
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <span class="lang_code">ES</span>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -67,25 +73,25 @@
       <img class="hero_cat" src="media/images/web/cat.webp" width="1100" height="829"
            alt="" aria-hidden="true" fetchpriority="high">
       <h1 class="hero_title">Kaala Baloo</h1>
-      <p class="hero_tagline">Game developer &middot; Applied AI</p>
+      <p class="hero_tagline" data-i18n="hero.tagline">Game developer &middot; Applied AI</p>
 
       <p class="hero_buttons">
-        <a class="button button_main" href="#games">See my games</a>
+        <a class="button button_main" href="#games" data-i18n="hero.games">See my games</a>
         <a class="button" href="media/documents/CV%20Myriam.pdf" download="MyriamCollada_CV.pdf">
-          Download CV <span class="screen_reader">(PDF)</span>
+          <span data-i18n="hero.cv">Download CV</span> <span class="screen_reader" data-i18n="sr.pdf">(PDF)</span>
         </a>
       </p>
     </section>
 
     <section class="section" id="about" aria-labelledby="about_title">
       <div class="wrap text_block">
-        <h2 id="about_title">Hi! My name is Myriam Collada</h2>
-        <p>Also known as Kaala Baloo. I build games, and the systems that make them think.</p>
-        <p>I hold a BSc in Development of Video Games and Virtual Environments from UDIT, with a double major in
+        <h2 id="about_title" data-i18n="about.title">Hi! My name is Myriam Collada</h2>
+        <p data-i18n="about.p1">Also known as Kaala Baloo. I build games, and the systems that make them think.</p>
+        <p data-i18n="about.p2">I hold a BSc in Development of Video Games and Virtual Environments from UDIT, with a double major in
           Design and Programming, and I am now studying an MSc in Artificial Intelligence at Universidad Politécnica
-          de Madrid. I have thirteen published games and a track record across more than ten hackathons and game
+          de Madrid. I have fourteen published games and a track record across more than ten hackathons and game
           jams, three of them first places.</p>
-        <p>My work centres on applied AI: intelligent agents, behaviour simulation and generative systems. I have
+        <p data-i18n="about.p3">My work centres on applied AI: intelligent agents, behaviour simulation and generative systems. I have
           been writing code since I was 8 years old, from Scratch games to 3D-printed robots running on Arduino, and
           I still take the same pleasure in getting a system to behave.</p>
       </div>
@@ -93,19 +99,19 @@
 
     <section class="section" id="summary" aria-labelledby="skills_title">
       <div class="wrap">
-        <h2 id="skills_title" class="screen_reader">What I do</h2>
+        <h2 id="skills_title" data-i18n="skills.title" class="screen_reader">What I do</h2>
         <ul class="summary">
           <li class="summary_box">
-            <h3 class="title"><a href="#ai">Applied AI</a></h3>
+            <h3 class="title"><a href="#ai" data-i18n="skills.ai">Applied AI</a></h3>
             <ul class="text">
-              <li>Ollama &middot; Llama 3 &middot; Gemma 3</li>
-              <li>RAG pipelines</li>
-              <li>GOAP &middot; Case-Based Reasoning</li>
-              <li>Agent &amp; behaviour simulation</li>
+              <li data-i18n="skills.ai.1">Ollama &middot; Llama 3 &middot; Gemma 3</li>
+              <li data-i18n="skills.ai.2">RAG pipelines</li>
+              <li data-i18n="skills.ai.3">GOAP &middot; Case-Based Reasoning</li>
+              <li data-i18n="skills.ai.4">Agent &amp; behaviour simulation</li>
             </ul>
           </li>
           <li class="summary_box">
-            <h3 class="title"><a href="#programming">Programming</a></h3>
+            <h3 class="title"><a href="#programming" data-i18n="skills.programming">Programming</a></h3>
             <ul class="text">
               <li>C++ &middot; C# &middot; Python</li>
               <li>JavaScript &middot; HTML &middot; CSS</li>
@@ -114,7 +120,7 @@
             </ul>
           </li>
           <li class="summary_box">
-            <h3 class="title"><a href="#design">Design</a></h3>
+            <h3 class="title"><a href="#design" data-i18n="skills.design">Design</a></h3>
             <ul class="text">
               <li>Figma</li>
               <li>Canva</li>
@@ -122,7 +128,7 @@
             </ul>
           </li>
           <li class="summary_box">
-            <h3 class="title"><a href="#production">Production</a></h3>
+            <h3 class="title"><a href="#production" data-i18n="skills.production">Production</a></h3>
             <ul class="text">
               <li>Scrum</li>
               <li>Jira</li>
@@ -135,41 +141,41 @@
 
     <section class="section" id="ai" aria-labelledby="ai_title">
       <div class="wrap text_block">
-        <h2 id="ai_title">Applied AI</h2>
-        <p>The thread running through my recent work is making software decide things well: agents that plan, systems
+        <h2 id="ai_title" data-i18n="ai.title">Applied AI</h2>
+        <p data-i18n="ai.intro">The thread running through my recent work is making software decide things well: agents that plan, systems
           that adapt to the person using them, and generative models running locally rather than behind an API.</p>
       </div>
 
       <div class="wrap">
         <ul class="ai_list">
           <li class="ai_item">
-            <h3 class="ai_title">Adaptive AI architecture for enemy behaviour</h3>
-            <p class="ai_stack">Unreal Engine 5 &middot; GOAP &middot; Case-Based Reasoning &middot; Final degree project</p>
-            <p>A hybrid director and agent system that adapts NPC behaviour to the player's style while keeping
+            <h3 class="ai_title" data-i18n="ai.1.title">Adaptive AI architecture for enemy behaviour</h3>
+            <p class="ai_stack" data-i18n="ai.1.stack">Unreal Engine 5 &middot; GOAP &middot; Case-Based Reasoning &middot; Final degree project</p>
+            <p data-i18n="ai.1.body">A hybrid director and agent system that adapts NPC behaviour to the player's style while keeping
               pacing under the designer's control. Validated through an ablation study and user testing.</p>
           </li>
           <li class="ai_item">
             <h3 class="ai_title">
               <a href="https://github.com/KaalaBaloo/Redeia_OpGenius_IndesiaHack25" target="_blank" rel="noopener noreferrer">
-                Local RAG system
+                <span data-i18n="ai.2.title">Local RAG system</span>
                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                <span class="screen_reader">(opens in a new tab)</span>
+                <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
               </a>
             </h3>
             <p class="ai_stack">Ollama &middot; Llama 3 &middot; Gemma 3</p>
-            <p>A web tool that turns documents into adaptive learning material using generative AI, with the models
+            <p data-i18n="ai.2.body">A web tool that turns documents into adaptive learning material using generative AI, with the models
               running locally.</p>
           </li>
           <li class="ai_item">
             <h3 class="ai_title">
               <a href="https://github.com/KaalaBaloo/IndesIA_Ferrovial" target="_blank" rel="noopener noreferrer">
-                IndesIA hackathon with Ferrovial
+                <span data-i18n="ai.3.title">IndesIA hackathon with Ferrovial</span>
                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                <span class="screen_reader">(opens in a new tab)</span>
+                <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
               </a>
             </h3>
-            <p class="ai_stack">First place &middot; 2024</p>
-            <p>An applied AI prototype built against a real industrial brief over a hackathon weekend.</p>
+            <p class="ai_stack" data-i18n="ai.3.stack">First place &middot; 2024</p>
+            <p data-i18n="ai.3.body">An applied AI prototype built against a real industrial brief over a hackathon weekend.</p>
           </li>
         </ul>
       </div>
@@ -177,8 +183,8 @@
 
     <section class="section" id="games" aria-labelledby="games_title">
       <div class="wrap text_block">
-        <h2 id="games_title">Games</h2>
-        <p>Thirteen published games since 2021, some solo and most with small teams. Chulu's Janitor comes first
+        <h2 id="games_title" data-i18n="games.title">Games</h2>
+        <p data-i18n="games.intro">Fourteen published games since 2021, some solo and most with small teams. Chulu's Janitor comes first
           because it is the project I am proudest of. Everything after it runs newest to oldest.</p>
       </div>
 
@@ -188,13 +194,13 @@
             <a class="example_link" href="https://gruselgamesstudios.itch.io/chulus-janitor" target="_blank" rel="noopener noreferrer">
               <span class="frame">
                 <img class="example_img" src="media/images/web/chulusjanitor.webp" width="616" height="353" alt="" loading="lazy" decoding="async">
-                <span class="badge">Featured project</span>
+                <span class="badge" data-i18n="games.badge">Featured project</span>
               </span>
               <span class="example_info">
                 <span class="example_name">Chulu's Janitor <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2024 &middot; Puzzle &middot; Unity &middot; Grusel Games Studios</span>
+                <span class="example_meta" data-i18n="games.chulu">2024 &middot; Puzzle &middot; Unity &middot; Grusel Games Studios</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -204,9 +210,9 @@
               </span>
               <span class="example_info">
                 <span class="example_name">Weeping Rose <i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
-                <span class="example_meta">2026 &middot; In development &middot; First prize at Match in Games, UDIT</span>
+                <span class="example_meta" data-i18n="games.weeping">2026 &middot; In development &middot; First prize at Match in Games, UDIT</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -214,9 +220,19 @@
               <img class="example_img" src="media/images/web/arope.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">AROPE <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2026 &middot; Turn-based strategy &middot; Unity</span>
+                <span class="example_meta" data-i18n="games.arope">2026 &middot; Turn-based strategy &middot; Unity</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li class="example">
+            <a class="example_link" href="https://play.google.com/store/apps/details?id=kaalabaloo.bbcat" target="_blank" rel="noopener noreferrer">
+              <img class="example_img contain" src="media/images/web/bbcat.webp" width="512" height="512" alt="" loading="lazy" decoding="async">
+              <span class="example_info">
+                <span class="example_name">BB Cat <i class="fa-brands fa-google-play" aria-hidden="true"></i></span>
+                <span class="example_meta" data-i18n="games.bbcat">2025 &middot; Virtual pet simulator &middot; Android</span>
+              </span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -224,9 +240,9 @@
               <img class="example_img" src="media/images/web/madrid-hambre-y-fe.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Madrid: Hambre y Fe <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2025 &middot; Interactive fiction &middot; Unity</span>
+                <span class="example_meta" data-i18n="games.madrid">2025 &middot; Interactive fiction &middot; Unity</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -234,9 +250,9 @@
               <img class="example_img" src="media/images/web/konpira-run-run.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Konpira Run Run <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2025 &middot; Japanese folklore &middot; Construct 3</span>
+                <span class="example_meta" data-i18n="games.konpira">2025 &middot; Japanese folklore &middot; Construct 3</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -244,9 +260,9 @@
               <img class="example_img" src="media/images/web/keyboard-snake.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Keyboard Snake <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2025 &middot; Action &middot; Unity</span>
+                <span class="example_meta" data-i18n="games.snake">2025 &middot; Action &middot; Unity</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -254,9 +270,9 @@
               <img class="example_img" src="media/images/web/erebus-nyx.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Erebus-Nyx <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2025 &middot; Survival horror &middot; Unreal Engine</span>
+                <span class="example_meta" data-i18n="games.erebus">2025 &middot; Survival horror &middot; Unreal Engine</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -264,9 +280,9 @@
               <img class="example_img" src="media/images/web/5-minutos-en-madrid.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">5 Minutos en Madrid <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2024 &middot; Point &amp; click simulation &middot; Construct 3</span>
+                <span class="example_meta" data-i18n="games.5min">2024 &middot; Point &amp; click simulation &middot; Construct 3</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -274,9 +290,9 @@
               <img class="example_img" src="media/images/web/correconlacabeza.webp" width="700" height="253" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Corre con la Cabeza <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2024 &middot; Stealth strategy</span>
+                <span class="example_meta" data-i18n="games.corre">2024 &middot; Stealth strategy</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -284,9 +300,9 @@
               <img class="example_img" src="media/images/web/infiniteleiden.webp" width="430" height="532" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Infinite Leiden <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2023 &middot; Adventure</span>
+                <span class="example_meta" data-i18n="games.leiden">2023 &middot; Adventure</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -294,9 +310,9 @@
               <img class="example_img" src="media/images/web/alux.webp" width="430" height="388" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Alux <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2022 &middot; Platformer</span>
+                <span class="example_meta" data-i18n="games.alux">2022 &middot; Platformer</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -304,9 +320,9 @@
               <img class="example_img" src="media/images/web/gatotanca.webp" width="700" height="446" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">GatoTanca <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2022 &middot; Sports</span>
+                <span class="example_meta" data-i18n="games.gato">2022 &middot; Sports</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -314,9 +330,9 @@
               <img class="example_img" src="media/images/web/ultimavoluntad.webp" width="315" height="250" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">Última Voluntad <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2022 &middot; Puzzle</span>
+                <span class="example_meta" data-i18n="games.ultima">2022 &middot; Puzzle</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
           <li class="example">
@@ -324,9 +340,9 @@
               <img class="example_img" src="media/images/web/9salas.webp" width="700" height="698" alt="" loading="lazy" decoding="async">
               <span class="example_info">
                 <span class="example_name">9 Salas <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                <span class="example_meta">2021 &middot; Puzzle</span>
+                <span class="example_meta" data-i18n="games.9salas">2021 &middot; Puzzle</span>
               </span>
-              <span class="screen_reader">(opens in a new tab)</span>
+              <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
             </a>
           </li>
         </ul>
@@ -334,8 +350,8 @@
         <p class="more_link">
           <a class="button button_main" href="https://kaalabaloo.itch.io/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-itch-io" aria-hidden="true"></i>
-            Play them on itch.io
-            <span class="screen_reader">(opens in a new tab)</span>
+            <span data-i18n="games.more">Play them on itch.io</span>
+            <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
           </a>
         </p>
       </div>
@@ -343,29 +359,29 @@
 
     <section class="section" id="experience" aria-labelledby="experience_title">
       <div class="wrap">
-        <h2 id="experience_title">Experience</h2>
+        <h2 id="experience_title" data-i18n="exp.title">Experience</h2>
 
         <ol class="jobs">
           <li class="job">
-            <h3 class="job_role">QA Tester</h3>
-            <p class="job_meta">Nakama Game Studio &middot; Coloratura &middot; 2026</p>
-            <p>Testing a narrative adventure played entirely through audio, with a focus on accessibility for blind
+            <h3 class="job_role" data-i18n="exp.1.role">QA Tester</h3>
+            <p class="job_meta" data-i18n="exp.1.meta">Nakama Game Studio &middot; Coloratura &middot; 2026</p>
+            <p data-i18n="exp.1.body">Testing a narrative adventure played entirely through audio, with a focus on accessibility for blind
               players. The game was featured in national media including ABC, Antena 3 and Vandal.</p>
           </li>
           <li class="job">
-            <h3 class="job_role">Software Intern</h3>
-            <p class="job_meta">Lurtis AI &middot; November 2024 to April 2025</p>
-            <p>Developed software tools and Unity prototypes at a company specialising in AI-based solutions.</p>
+            <h3 class="job_role" data-i18n="exp.2.role">Software Intern</h3>
+            <p class="job_meta" data-i18n="exp.2.meta">Lurtis AI &middot; November 2024 to April 2025</p>
+            <p data-i18n="exp.2.body">Developed software tools and Unity prototypes at a company specialising in AI-based solutions.</p>
           </li>
           <li class="job">
-            <h3 class="job_role">Assistant Instructor</h3>
-            <p class="job_meta">UDIT Video Game Summer Camp &middot; July 2023 and 2025</p>
-            <p>Taught design and programming to students aged 15 to 18.</p>
+            <h3 class="job_role" data-i18n="exp.3.role">Assistant Instructor</h3>
+            <p class="job_meta" data-i18n="exp.3.meta">UDIT Video Game Summer Camp &middot; July 2023 and 2025</p>
+            <p data-i18n="exp.3.body">Taught design and programming to students aged 15 to 18.</p>
           </li>
           <li class="job">
-            <h3 class="job_role">Brand Ambassador</h3>
-            <p class="job_meta">UDIT &middot; 2023 to 2026</p>
-            <p>Represented UDIT's video game programme at open days and industry events, including IFEMA and Madrid
+            <h3 class="job_role" data-i18n="exp.4.role">Brand Ambassador</h3>
+            <p class="job_meta" data-i18n="exp.4.meta">UDIT &middot; 2023 to 2026</p>
+            <p data-i18n="exp.4.body">Represented UDIT's video game programme at open days and industry events, including IFEMA and Madrid
               in Game.</p>
           </li>
         </ol>
@@ -374,39 +390,39 @@
 
     <section class="section" id="cv" aria-labelledby="cv_title">
       <div class="wrap">
-        <h2 id="cv_title">CV</h2>
+        <h2 id="cv_title" data-i18n="cv.title">CV</h2>
 
         <div class="cv">
           <div class="cv_group">
-            <h3>Education</h3>
+            <h3 data-i18n="cv.education">Education</h3>
             <ul>
-              <li><strong>Universidad Politécnica de Madrid</strong> — MSc in Artificial Intelligence <span class="cv_when">2026 – present</span></li>
-              <li><strong>UDIT</strong> — BSc in Development of Video Games and Virtual Environments, double major in Design and Programming <span class="cv_when">2022 – 2026</span></li>
-              <li><strong>ESNE</strong> — Video Game Summer Camp <span class="cv_when">July 2021 &amp; 2022</span></li>
+              <li><strong>Universidad Politécnica de Madrid</strong> <span data-i18n="cv.edu.1">— MSc in Artificial Intelligence</span> <span class="cv_when" data-i18n="cv.edu.1.when">2026 – present</span></li>
+              <li><strong>UDIT</strong> <span data-i18n="cv.edu.2">— BSc in Development of Video Games and Virtual Environments, double major in Design and Programming</span> <span class="cv_when" data-i18n="cv.edu.2.when">2022 – 2026</span></li>
+              <li><strong>ESNE</strong> <span data-i18n="cv.edu.3">— Video Game Summer Camp</span> <span class="cv_when" data-i18n="cv.edu.3.when">July 2021 &amp; 2022</span></li>
             </ul>
           </div>
 
           <div class="cv_group">
-            <h3>Awards</h3>
+            <h3 data-i18n="cv.awards">Awards</h3>
             <ul>
-              <li><strong>1st place</strong> — Match in Games, UDIT, for Weeping Rose <span class="cv_when">2026</span></li>
-              <li><strong>1st place</strong> — IndesIA AI Hackathon with Ferrovial <span class="cv_when">2024</span></li>
-              <li><strong>1st place</strong> — HackSTEM, Spanish Startups × Siemens Gamesa <span class="cv_when">2023</span></li>
-              <li><strong>1st place</strong> — Hack For Good, Telefónica <span class="cv_when">2022</span></li>
-              <li><strong>1st place</strong> — FORD Impulsando Sueños, national <span class="cv_when">2021</span></li>
-              <li><strong>3rd place</strong> — Hack For Good, Telefónica <span class="cv_when">2024</span></li>
-              <li><strong>3rd place</strong> — Ideathon Amadeus × ESNE <span class="cv_when">2022</span></li>
-              <li><strong>Selected exhibitor</strong> — Game Jam Madrid Crea <span class="cv_when">2024, 2025, 2026</span></li>
+              <li><strong data-i18n="cv.first">1st place</strong> <span data-i18n="cv.aw.1">— Match in Games, UDIT, for Weeping Rose</span> <span class="cv_when">2026</span></li>
+              <li><strong data-i18n="cv.first">1st place</strong> <span data-i18n="cv.aw.2">— IndesIA AI Hackathon with Ferrovial</span> <span class="cv_when">2024</span></li>
+              <li><strong data-i18n="cv.first">1st place</strong> <span data-i18n="cv.aw.3">— HackSTEM, Spanish Startups × Siemens Gamesa</span> <span class="cv_when">2023</span></li>
+              <li><strong data-i18n="cv.first">1st place</strong> <span data-i18n="cv.aw.4">— Hack For Good, Telefónica</span> <span class="cv_when">2022</span></li>
+              <li><strong data-i18n="cv.first">1st place</strong> <span data-i18n="cv.aw.5">— FORD Impulsando Sueños, national</span> <span class="cv_when">2021</span></li>
+              <li><strong data-i18n="cv.third">3rd place</strong> <span data-i18n="cv.aw.6">— Hack For Good, Telefónica</span> <span class="cv_when">2024</span></li>
+              <li><strong data-i18n="cv.third">3rd place</strong> <span data-i18n="cv.aw.7">— Ideathon Amadeus × ESNE</span> <span class="cv_when">2022</span></li>
+              <li><strong data-i18n="cv.exhibitor">Selected exhibitor</strong> <span data-i18n="cv.aw.8">— Game Jam Madrid Crea</span> <span class="cv_when">2024, 2025, 2026</span></li>
             </ul>
           </div>
 
           <div class="cv_group">
-            <h3>Languages &amp; volunteering</h3>
+            <h3 data-i18n="cv.langs">Languages &amp; volunteering</h3>
             <ul>
-              <li><strong>Spanish</strong> — native</li>
-              <li><strong>English</strong> — C1, Cambridge</li>
-              <li><strong>Abrazo Animal</strong> — volunteer <span class="cv_when">2015 – present</span></li>
-              <li><strong>GREFA</strong> — volunteer <span class="cv_when">2021 – 2022</span></li>
+              <li><strong data-i18n="cv.spanish">Spanish</strong> <span data-i18n="cv.spanish.v">— native</span></li>
+              <li><strong data-i18n="cv.english">English</strong> <span data-i18n="cv.english.v">— C1, Cambridge</span></li>
+              <li><strong>Abrazo Animal</strong> <span data-i18n="cv.vol.1">— volunteer</span> <span class="cv_when" data-i18n="cv.vol.1.when">2015 – present</span></li>
+              <li><strong>GREFA</strong> <span data-i18n="cv.vol.2">— volunteer</span> <span class="cv_when" data-i18n="cv.vol.2.when">2021 – 2022</span></li>
             </ul>
           </div>
         </div>
@@ -414,7 +430,7 @@
         <p class="cv_download">
           <a class="button button_main" href="media/documents/CV%20Myriam.pdf" download="MyriamCollada_CV.pdf">
             <i class="fa-solid fa-download" aria-hidden="true"></i>
-            Download the full CV <span class="screen_reader">(PDF)</span>
+            <span data-i18n="cv.download">Download the full CV</span> <span class="screen_reader" data-i18n="sr.pdf">(PDF)</span>
           </a>
         </p>
       </div>
@@ -422,14 +438,14 @@
 
     <section class="section" id="abilities" aria-labelledby="abilities_title">
       <div class="wrap">
-          <h2 id="abilities_title">Abilities</h2>
+          <h2 id="abilities_title" data-i18n="abilities.title">Abilities</h2>
           <section class="section" id="programming" aria-labelledby="programming_title">
             <div class="wrap text_block">
-              <h2 id="programming_title">Programming</h2>
-              <p>I work mainly in C# inside Unity and in C++ with Unreal Engine 5, and in Python for anything model or
+              <h2 id="programming_title" data-i18n="prog.title">Programming</h2>
+              <p data-i18n="prog.p1">I work mainly in C# inside Unity and in C++ with Unreal Engine 5, and in Python for anything model or
                 data shaped. My degree covered advanced artificial intelligence, object-oriented programming, graphics
                 programming, concurrent programming and databases, and I have put most of it to use in shipped projects.</p>
-              <p>I am a fast learner and confident stepping out of my comfort zone. I have also worked with SQL and
+              <p data-i18n="prog.p2">I am a fast learner and confident stepping out of my comfort zone. I have also worked with SQL and
                 JavaScript across hackathons, coursework and client prototypes.</p>
             </div>
 
@@ -440,9 +456,9 @@
                     <img class="example_img" src="media/images/web/chulusjanitor.webp" width="616" height="353" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
                       <span class="example_name">Chulu's Janitor <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Unity &middot; GitHub repository</span>
+                      <span class="example_meta" data-i18n="prog.chulu">Unity &middot; GitHub repository</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
                 <li class="example">
@@ -450,19 +466,19 @@
                     <img class="example_img" src="media/images/web/natour.webp" width="403" height="502" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
                       <span class="example_name">Natour <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Augmented reality board game &middot; GitHub repository</span>
+                      <span class="example_meta" data-i18n="prog.natour">Augmented reality board game &middot; GitHub repository</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
                 <li class="example">
                   <a class="example_link" href="https://github.com/KaalaBaloo" target="_blank" rel="noopener noreferrer">
                     <img class="example_img contain" src="media/images/web/isidroid.webp" width="334" height="334" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
-                      <span class="example_name">All my repositories <i class="fa-brands fa-github" aria-hidden="true"></i></span>
-                      <span class="example_meta">GitHub profile</span>
+                      <span class="example_name"><span data-i18n="prog.all">All my repositories</span> <i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                      <span class="example_meta" data-i18n="prog.all.meta">GitHub profile</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
               </ul>
@@ -471,12 +487,12 @@
 
           <section class="section" id="design" aria-labelledby="design_title">
             <div class="wrap text_block">
-              <h2 id="design_title">Design</h2>
-              <p>My degree carried a double major in Design as well as Programming, and I have worked as a concept and
+              <h2 id="design_title" data-i18n="design.title">Design</h2>
+              <p data-i18n="design.p1">My degree carried a double major in Design as well as Programming, and I have worked as a concept and
                 level designer on all of my projects, handling documentation and building prototypes to iterate on and
                 validate the experience. I am especially proud of my work on Chulu's Janitor, which let me showcase a wide
-                range of my design summary.</p>
-              <p>As a designer, I take pride in my ability to understand what a client actually needs. Several of my
+                range of my design skills.</p>
+              <p data-i18n="design.p2">As a designer, I take pride in my ability to understand what a client actually needs. Several of my
                 winning hackathon projects were praised for exactly that.</p>
             </div>
 
@@ -487,9 +503,9 @@
                     <img class="example_img" src="media/images/web/chuluscasa.webp" width="700" height="590" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
                       <span class="example_name">Chulu's Janitor <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Game design document on Notion</span>
+                      <span class="example_meta" data-i18n="design.notion">Game design document on Notion</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
                 <li class="example">
@@ -497,19 +513,19 @@
                     <img class="example_img" src="media/images/web/infiniteleiden.webp" width="430" height="532" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
                       <span class="example_name">Infinite Leiden <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Project proposal document</span>
+                      <span class="example_meta" data-i18n="design.proposal">Project proposal document</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
                 <li class="example">
                   <a class="example_link" href="https://www.figma.com/proto/4YrjnAOKMSSZkYS0ia8a1T/Modelo-Web-Chulu%C2%B4s-Janitor?node-id=1-2&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">
                     <img class="example_img" src="media/images/web/cartelchulu.webp" width="632" height="700" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
-                      <span class="example_name">Chulu's Janitor website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Figma prototype</span>
+                      <span class="example_name"><span data-i18n="design.web">Chulu's Janitor website</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                      <span class="example_meta" data-i18n="design.figma">Figma prototype</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
               </ul>
@@ -518,8 +534,8 @@
 
           <section class="section" id="production" aria-labelledby="production_title">
             <div class="wrap text_block">
-              <h2 id="production_title">Production</h2>
-              <p>One of my proudest summary is motivating and organising small teams so everyone performs at their best.
+              <h2 id="production_title" data-i18n="prod.title">Production</h2>
+              <p data-i18n="prod.p1">One of my proudest skills is motivating and organising small teams so everyone performs at their best.
                 Most of my published games were made with a team I helped coordinate, and I take real satisfaction in
                 guiding a project from concept to release. That goes hand in hand with my enthusiasm for Scrum, and with
                 four years representing UDIT's video game programme at industry events.</p>
@@ -532,9 +548,9 @@
                     <img class="example_img" src="media/images/web/chulusgameplay.webp" width="700" height="528" alt="" loading="lazy" decoding="async">
                     <span class="example_info">
                       <span class="example_name">Chulu's Janitor <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-                      <span class="example_meta">Scrum board &amp; sprint planning</span>
+                      <span class="example_meta" data-i18n="prod.scrum">Scrum board &amp; sprint planning</span>
                     </span>
-                    <span class="screen_reader">(opens in a new tab)</span>
+                    <span class="screen_reader" data-i18n="sr.newtab">(opens in a new tab)</span>
                   </a>
                 </li>
               </ul>
@@ -546,46 +562,52 @@
 
   <footer class="footer_box" id="contact">
     <div class="wrap">
-      <h2 class="footer_title">Let's work together</h2>
+      <h2 class="footer_title" data-i18n="footer.title">Let's work together</h2>
 
       <ul class="contact">
         <li class="contact_item">
-          <span class="contact_label">Hiring</span>
+          <span class="contact_label" data-i18n="footer.hiring">Hiring</span>
           <a href="mailto:myriamcolladamunoz@gmail.com">myriamcolladamunoz@gmail.com</a>
         </li>
         <li class="contact_item">
-          <span class="contact_label">Indie work</span>
+          <span class="contact_label" data-i18n="footer.indie">Indie work</span>
           <a href="mailto:kaalabaloo@gmail.com">kaalabaloo@gmail.com</a>
         </li>
         <li class="contact_item">
-          <span class="contact_label">Phone</span>
+          <span class="contact_label" data-i18n="footer.phone">Phone</span>
           <a href="tel:+34647557213">+34 647 55 72 13</a>
         </li>
       </ul>
 
       <ul class="social">
         <li>
-          <a href="https://github.com/KaalaBaloo" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+          <a href="https://github.com/KaalaBaloo" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" data-i18n-aria="aria.github">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://es.linkedin.com/in/myriam-collada-mu%C3%B1oz-ba8776251" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+          <a href="https://es.linkedin.com/in/myriam-collada-mu%C3%B1oz-ba8776251" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" data-i18n-aria="aria.linkedin">
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://kaalabaloo.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io (opens in a new tab)">
+          <a href="https://kaalabaloo.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io (opens in a new tab)" data-i18n-aria="aria.itch">
             <i class="fa-brands fa-itch-io" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=kaalabaloo.bbcat" target="_blank" rel="noopener noreferrer" aria-label="Google Play (opens in a new tab)" data-i18n-aria="aria.play">
+            <i class="fa-brands fa-google-play" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
 
-      <p class="footer_note">Madrid, Spain.</p>
+      <p class="footer_note" data-i18n="footer.note">Madrid, Spain.</p>
     </div>
   </footer>
 
-  <script src="js/index.js?v=2" defer></script>
+  <script src="js/i18n.js?v=3" defer></script>
+  <script src="js/index.js?v=3" defer></script>
 </body>
 
 </html>
