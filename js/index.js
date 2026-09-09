@@ -1,33 +1,37 @@
+(function () {
+  'use strict';
 
-// Use requestAnimationFrame or fallback to setTimeout
-var scroll = window.requestAnimationFrame ||
-    function(callback) {
-        window.setTimeout(callback, 1000/60);
-    };
-
-// Select elements to show on scroll
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
-
-function loop() {
-    elementsToShow.forEach(function(element) {
-        if (isElementInViewport(element)) {
-            element.classList.add('is-visible');
-        } else {
-            element.classList.remove('is-visible');
-        }
+  if (location.hash && document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      var target = document.querySelector(location.hash);
+      if (target) target.scrollIntoView();
     });
-    scroll(loop);
-}
+  }
 
-// Start the loop
-loop();
+  var elements = document.querySelectorAll('.show-on-scroll');
+  if (!elements.length) return;
 
-// Helper function to check if the element is in the viewport
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-        (rect.top <= 0 && rect.bottom >= 0) ||
-        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
-        (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-    );
-}
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    elements.forEach(function (element) {
+      element.classList.add('is-visible');
+    });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: '0px 0px -8% 0px',
+    threshold: 0.1
+  });
+
+  elements.forEach(function (element) {
+    observer.observe(element);
+  });
+})();
