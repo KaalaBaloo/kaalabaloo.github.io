@@ -632,6 +632,11 @@ p { text-wrap: pretty; }
 
 .cv_download { margin-top: var(--space-l); }
 
+.abilities_title {
+  font-size: var(--text-lg);
+  line-height: 1.25;
+}
+
 /* Footer */
 .footer_box {
   margin-top: var(--space-xl);
