@@ -20,17 +20,4 @@ python -m http.server 8137
 | `media/documents/` | CV |
 
 ## Notes
-
-Colours, spacing and type sizes are custom properties at the top of the
-stylesheet. Change them there rather than in the component rules.
-
-Type sizes use `clamp()` in `rem`, so they scale with the viewport and
-still respond to the reader's browser font size.
-
-Headings look for `LostSignal` first and fall back to Space Grotesk.
-Adding an `@font-face` for `LostSignal` switches it over with no other
-change.
-
-Images in `media/images/web/` are generated from the originals. After
-adding artwork, resize to about 700px on the long edge and save as WebP
-at quality 82.
+The stylesheet and script are linked with a `?v=` version number. Need to change version after editing file, otherwise returning visitors keep the old copy from their cache and the page renders with old style.
